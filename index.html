@@ -14,6 +14,7 @@
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
       /* .raleway {
         font-family: "Raleway", sans-serif;
       } */
@@ -23,10 +24,16 @@
         /* font-weight: 800; */
         font-style: normal;
       }
+      .inter-lg {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        /* font-weight: 700px; */
+        font-style: normal;
+}
     </style>
 </head>
-<body class="max-w-7xl mx-auto raleway-large">
-    <header>
+<body class="raleway-large">
+    <header class="max-w-7xl mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -56,7 +63,7 @@
           </div>
     </header>
 
-    <body>
+    <main class="max-w-7xl mx-auto">
         <section>
           <div class="relative hero h-60 md:h-[550px] rounded-2xl" style="background-image: url('images/banner.png');">
             <div class="hero-overlay bg-opacity-0"></div>
@@ -185,14 +192,200 @@
             </div>
 
           </div>
+          <!-- seat selection -->
+          <section class="mt-6 p-1 md:p-8 flex flex-col lg:flex-row bg-white">
+            <div class="flex justify-center">
+             <!-- left -->
+             <div class="scale-75 md:scale-100 border-r-0 lg:border-r-2 border-none lg:border-dashed  pr-1 md:pr-8">
+              <h2 class="text-xl text-center md:text-start font-bold ml-1 md:ml-9">Select Your Seat</h2>
+              <div class="flex justify-around md:justify-between border-y-2 border-dashed p-3">
+                <div class="flex  gap-2 ">
+                  <img src="images/seat-gray.png" alt="">
+                  <p class="text-base text-gray-600 font-semibold">Available</p>
+                </div>
+                <div class="flex gap-2">
+                  <img src="images/seat-green-filled.png" alt="">
+                  <p class="text-base text-gray-600 font-semibold">Booked</p>
+                </div>
+              </div>
+              <div class="scale-75 md:scale-100">
+                <div class="my-6  flex justify-end">
+                  <img class="py-4 px-11 rounded-xl  bg-[#0307121a]" src="images/steering-wheel.png" alt="">
+                </div>
+                <div class="flex gap-4 ">
+                  <!-- Alphabets -->
+                  <div class="mt-4">
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">A</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">B</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">C</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">D</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">E</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">F</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">G</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">H</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">I</p>
+                    <p class="mb-11 md:mb-12 font-semibold text-gray-600">J</p>
+                  </div> 
+                  <!-- cols -->
+                  <div class="flex gap-12 md:gap-16">
+                    <!-- col left -->
+                    <div class="flex gap-5 md:gap-8">
+                      <!-- clo 1 -->
+                      <div class="flex flex-col inter-lg gap-5 md:gap-6">
+                        <button id="A1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A1</button>
+                        <button id="B1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B1</button>
+                        <button id="C1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C1</button>
+                        <button id="D1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D1</button>
+                        <button id="E1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E1</button>
+                        <button id="F1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F1</button>
+                        <button id="G1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G1</button>
+                        <button id="H1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H1</button>
+                        <button id="I1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I1</button>
+                        <button id="J1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J1</button>
+                      </div>
+                      <!-- col 2 -->
+                      <div class="flex flex-col inter-lg gap-5 md:gap-6">
+                        <button id="A2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A2</button>
+                        <button id="B2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B2</button>
+                        <button id="C2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C2</button>
+                        <button id="D2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D2</button>
+                        <button id="E2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E2</button>
+                        <button id="F2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F2</button>
+                        <button id="G2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G2</button>
+                        <button id="H2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H2</button>
+                        <button id="I2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I2</button>
+                        <button id="J2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J2</button>
+                      </div>
+                    </div> 
+                    <!-- col right -->
+                    <div class="flex gap-5 md:gap-8">
+                      <!-- clo 3 -->
+                      <div class="flex flex-col inter-lg gap-5 md:gap-6">
+                        <button id="A3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A3</button>
+                        <button id="B3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B3</button>
+                        <button id="C3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C3</button>
+                        <button id="D3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D3</button>
+                        <button id="E3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E3</button>
+                        <button id="F3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F3</button>
+                        <button id="G3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G3</button>
+                        <button id="H3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H3</button>
+                        <button id="I3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I3</button>
+                        <button id="J3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J3</button>
+                      </div>
+                      <!-- col 4 -->
+                      <div class="flex flex-col inter-lg gap-5 md:gap-6">
+                        <button id="A4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A4</button>
+                        <button id="B4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B4</button>
+                        <button id="C4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C4</button>
+                        <button id="D4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D4</button>
+                        <button id="E4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E4</button>
+                        <button id="F4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F4</button>
+                        <button id="G4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G4</button>
+                        <button id="H4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H4</button>
+                        <button id="I4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I4</button>
+                        <button id="J4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J4</button>
+                      </div>
+                    </div> 
+                  </div>
+              
+                </div>
+                
+
+              </div>
+            </div>           
+            </div>
+            <!-- Right -->
+            <div class="ml-1 md:ml-8">
+              <h2 class="text-xl border-b-2 border-dashed pb-6 font-bold ">Your Selected Seats</h2>
+              <!-- price info -->
+              <div class="p-8 mt-6 bg-[#F7F8F8]">
+                <div class="flex justify-between">
+                  <p class="font-semibold">Seat <span id="" class="bg-[#1DD100] rounded-xl px-2">0</span> </p>
+                  <p class="font-semibold">Class</p>
+                  <p class="font-semibold">Price</p>
+                </div>
+                <div id="" class="p-4 my-4 border-y-2 border-dashed">
+
+                </div>
+                <div class="flex justify-between">
+                  <h3 class="font-semibold">Total Price</h3>
+                  <h3 class="font-semibold">BDT <span>0000</span> </h3>
+                </div>
+                <div id=""  class="my-4 mx-2 relative">
+                  <input class="w-full pr-12 pl-4 py-3 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Have any coupon?" type="text" disabled>
+                  <button class="btn rounded-lg absolute top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-semibold " disabled>Apply</button>
+                </div>
+                <div class="flex justify-between">
+                  <h3 class="font-bold">Grand Price</h3>
+                  <h3 class="font-semibold">BDT <span>0000</span> </h3>
+                </div>
+              </div>
+              <!-- personal Info -->
+              <div>
+                <div class="py-6">
+                  <h3 class="font-bold mb-4">Passenger Name*</h3>
+                  <input class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Your Name" type="text">
+                </div>
+                <div class="">
+                  <h3 class="font-bold mb-4">Phone Number*</h3>
+                  <input class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Phone" type="text">
+                </div>
+                <div class="py-6">
+                  <h3 class="font-bold mb-4">Email Id</h3>
+                  <input class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="...@gmail.com" type="text">
+                </div>
+                <button id="" class="mb-6 btn rounded-lg w-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-bold " disabled> NEXT</button>
+                <div class="flex justify-between">
+                  <p><a href="" class="text-gray-600">Terms and Conditions</a></p>
+                  <p><a href="" class="text-gray-600">Cancellation Policy</a></p>
+                </div>
+              </div>
+            </div>
+          </section>        
         </section>
-    </body>
 
-    <footer>
+      </main>
 
+    <footer class="bg-black p-5 md:p-32">
+      <!-- upper-->
+    <div class="  pb-12 border-b-2 border-dashed flex flex-col md:flex-row gap-4 justify-between">
+      <div class="">
+        <h1 class="text-2xl text-white font-extrabold ">Smart-Ticket</h1>
+        <p class="text-gray-400">Smart-Ticket is a digital platform to make your <br> daily commuting better</p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <p class="text-white">Downoad our App</p>
+        <button>
+          <div class="flex gap-2 border-2 border-white px-3 py-2 rounded-xl">
+            <img src="images/playstore.png" alt="">
+            <div>
+              <h3 class="text-xl text-white font-bold">Get it on</h3>
+              <h1 class="text-2xl text-white font-extra-bold">Google Play</h1>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>  
+      <!-- lower -->
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="" class="hover:underline">Smart-Ticket</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Terms & Conditions</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Return & refund policy</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline me-4 md:me-6">Privacy policy</a>
+            </li>
+        </ul>
+      </div>
     </footer>
 
 
     <script src="scripts/script.js"></script>
 </body>
 </html>
+
