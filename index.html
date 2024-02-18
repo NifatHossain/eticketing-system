@@ -77,7 +77,7 @@
               <div class="max-w-[70%]">
                 <h1 class="mb-5 text-2xl md:text-6xl font-extrabold"> End-to-End Travel with <span class="text-[#1DD100]"> P Paribahan</span></h1>
                 <p class="mb-5 text-xs">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined </p>
-                <button class="btn btn-primary bg-[#1DD100] border-0 text-black font-bold">Get Started</button>
+                <a href="#ticketSection"><button class="btn btn-primary bg-[#1DD100] border-0 text-black font-bold">Get Started </button></a> 
               </div>
             </div>
             <div class="absolute -bottom-96  md:-bottom-[11%] flex gap-4 md:gap-8 flex-col md:flex-row  ">
@@ -141,10 +141,10 @@
           </div>
         </section>
 
-        <section class="pt-28 scale-90 md:scale-100 rounded-t-[50px] border-2 px-1 md:px-5 lg:px-28  border-t-[#1DD100] bg-[#F7F8F8]">
+        <section id="ticketSection" class="inter-lg pt-28 scale-90 md:scale-100 rounded-t-[50px] border-2 px-1 md:px-5 lmd:px-8 lg:px-10  border-t-[#1DD100] bg-[#F7F8F8]">
           <div>
             <div>
-              <h3 class="text-4xl text-center mb-6 font-bold">P.H Paribahan</h3>
+              <h3 class="text-4xl text-center mb-6 font-bold raleway-large">P.H Paribahan</h3>
               <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined</p>
             </div>
             <div class="mt-12 bg-white  rounded-xl flex">
@@ -158,7 +158,7 @@
                     </div>
                   </div>
                   <div>
-                    <div class="flex items-center p-1 md:p-3 gap-1 rounded-lg text-sm md:text-base font-semibold text-[#1DD100] bg-green-200"> <img src="images/seat-green.png" alt="" srcset=""> <span id="">40</span>Seats left</div>
+                    <div class="flex items-center p-1 md:p-3 gap-1 rounded-lg text-sm md:text-base font-semibold text-[#1DD100] bg-green-200"> <img src="images/seat-green.png" alt="" srcset=""> <span id="seatLeft">40</span>Seats left</div>
                   </div>
                 </div>
                 <div class="flex justify-center mt-5 mb-5 block md:hidden">
@@ -238,58 +238,58 @@
                     <div class="flex gap-5 md:gap-8">
                       <!-- clo 1 -->
                       <div class="flex flex-col inter-lg gap-5 md:gap-6">
-                        <button id="A1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A1</button>
-                        <button id="B1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B1</button>
-                        <button id="C1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C1</button>
-                        <button id="D1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D1</button>
-                        <button id="E1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E1</button>
-                        <button id="F1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F1</button>
-                        <button id="G1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G1</button>
-                        <button id="H1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H1</button>
-                        <button id="I1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I1</button>
-                        <button id="J1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J1</button>
+                        <button onclick="seatClick('A1')" id="A1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A1</button>
+                        <button onclick="seatClick('B1')" id="B1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B1</button>
+                        <button onclick="seatClick('C1')" id="C1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C1</button>
+                        <button onclick="seatClick('D1')" id="D1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D1</button>
+                        <button onclick="seatClick('E1')" id="E1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E1</button>
+                        <button onclick="seatClick('F1')" id="F1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F1</button>
+                        <button onclick="seatClick('G1')" id="G1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G1</button>
+                        <button onclick="seatClick('H1')" id="H1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H1</button>
+                        <button onclick="seatClick('I1')" id="I1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I1</button>
+                        <button onclick="seatClick('J1')" id="J1" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J1</button>
                       </div>
                       <!-- col 2 -->
                       <div class="flex flex-col inter-lg gap-5 md:gap-6">
-                        <button id="A2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A2</button>
-                        <button id="B2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B2</button>
-                        <button id="C2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C2</button>
-                        <button id="D2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D2</button>
-                        <button id="E2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E2</button>
-                        <button id="F2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F2</button>
-                        <button id="G2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G2</button>
-                        <button id="H2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H2</button>
-                        <button id="I2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I2</button>
-                        <button id="J2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J2</button>
+                        <button onclick="seatClick('A2')" id="A2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A2</button>
+                        <button onclick="seatClick('B2')" id="B2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B2</button>
+                        <button onclick="seatClick('C2')" id="C2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C2</button>
+                        <button onclick="seatClick('D2')" id="D2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D2</button>
+                        <button onclick="seatClick('E2')" id="E2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E2</button>
+                        <button onclick="seatClick('F2')" id="F2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F2</button>
+                        <button onclick="seatClick('G2')" id="G2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G2</button>
+                        <button onclick="seatClick('H2')" id="H2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H2</button>
+                        <button onclick="seatClick('I2')" id="I2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I2</button>
+                        <button onclick="seatClick('J2')" id="J2" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J2</button>
                       </div>
                     </div> 
                     <!-- col right -->
                     <div class="flex gap-5 md:gap-8">
                       <!-- clo 3 -->
                       <div class="flex flex-col inter-lg gap-5 md:gap-6">
-                        <button id="A3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A3</button>
-                        <button id="B3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B3</button>
-                        <button id="C3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C3</button>
-                        <button id="D3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D3</button>
-                        <button id="E3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E3</button>
-                        <button id="F3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F3</button>
-                        <button id="G3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G3</button>
-                        <button id="H3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H3</button>
-                        <button id="I3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I3</button>
-                        <button id="J3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J3</button>
+                        <button onclick="seatClick('A3')" id="A3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A3</button>
+                        <button onclick="seatClick('B3')" id="B3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B3</button>
+                        <button onclick="seatClick('C3')" id="C3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C3</button>
+                        <button onclick="seatClick('D3')" id="D3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D3</button>
+                        <button onclick="seatClick('E3')" id="E3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E3</button>
+                        <button onclick="seatClick('F3')" id="F3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F3</button>
+                        <button onclick="seatClick('G3')" id="G3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G3</button>
+                        <button onclick="seatClick('H3')" id="H3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H3</button>
+                        <button onclick="seatClick('I3')" id="I3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I3</button>
+                        <button onclick="seatClick('J3')" id="J3" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J3</button>
                       </div>
                       <!-- col 4 -->
                       <div class="flex flex-col inter-lg gap-5 md:gap-6">
-                        <button id="A4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A4</button>
-                        <button id="B4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B4</button>
-                        <button id="C4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C4</button>
-                        <button id="D4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D4</button>
-                        <button id="E4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E4</button>
-                        <button id="F4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F4</button>
-                        <button id="G4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G4</button>
-                        <button id="H4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H4</button>
-                        <button id="I4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I4</button>
-                        <button id="J4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J4</button>
+                        <button onclick="seatClick('A4')" id="A4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">A4</button>
+                        <button onclick="seatClick('B4')" id="B4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">B4</button>
+                        <button onclick="seatClick('C4')" id="C4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">C4</button>
+                        <button onclick="seatClick('D4')" id="D4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">D4</button>
+                        <button onclick="seatClick('E4')" id="E4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">E4</button>
+                        <button onclick="seatClick('F4')" id="F4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">F4</button>
+                        <button onclick="seatClick('G4')" id="G4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">G4</button>
+                        <button onclick="seatClick('H4')" id="H4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">H4</button>
+                        <button onclick="seatClick('I4')" id="I4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">I4</button>
+                        <button onclick="seatClick('J4')" id="J4" class="btn bg-[#F7F8F8] text-gray-600 p-4 px-11">J4</button>
                       </div>
                     </div> 
                   </div>
@@ -301,46 +301,72 @@
             </div>           
             </div>
             <!-- Right -->
-            <div class="ml-1 md:ml-8">
+            <div class="ml-1 md:ml-8  inter-lg">
               <h2 class="text-xl border-b-2 border-dashed pb-6 font-bold ">Your Selected Seats</h2>
               <!-- price info -->
               <div class="p-8 mt-6 bg-[#F7F8F8]">
                 <div class="flex justify-between">
-                  <p class="font-semibold">Seat <span id="" class="bg-[#1DD100] rounded-xl px-2">0</span> </p>
+                  <p class="font-semibold">Seat <span id="seatSelected" class="bg-[#1DD100] rounded-xl px-2">0</span> </p>
                   <p class="font-semibold">Class</p>
                   <p class="font-semibold">Price</p>
                 </div>
-                <div id="" class="p-4 my-4 border-y-2 border-dashed">
+                <div id="ticketInfo" class="p-4 my-4 border-y-2 border-dashed">
 
                 </div>
                 <div class="flex justify-between">
                   <h3 class="font-semibold">Total Price</h3>
-                  <h3 class="font-semibold">BDT <span>0000</span> </h3>
+                  <h3 class="font-semibold">BDT <span id="totalPrice">0000</span> </h3>
                 </div>
-                <div id=""  class="my-4 mx-2 relative">
-                  <input class="w-full pr-12 pl-4 py-3 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Have any coupon?" type="text" disabled>
-                  <button class="btn rounded-lg absolute top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-semibold " disabled>Apply</button>
+                <div id="couponContainer"  class="my-4 mx-2 relative">
+                  <input id="couponInp" class="w-full pr-12 pl-4 py-3 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Have any coupon?" type="text" disabled>
+                  <button onclick="checkCoupon()" id="couponBtn" class="btn rounded-lg absolute top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-semibold " disabled>Apply</button>
                 </div>
                 <div class="flex justify-between">
                   <h3 class="font-bold">Grand Price</h3>
-                  <h3 class="font-semibold">BDT <span>0000</span> </h3>
+                  <h3 class="font-semibold">BDT <span id="grandTotal">0000</span> </h3>
                 </div>
               </div>
               <!-- personal Info -->
               <div>
                 <div class="py-6">
                   <h3 class="font-bold mb-4">Passenger Name*</h3>
-                  <input class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Your Name" type="text">
+                  <input id="nameInp" class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Your Name" type="text">
                 </div>
                 <div class="">
                   <h3 class="font-bold mb-4">Phone Number*</h3>
-                  <input class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Phone" type="text">
+                  <input id="phnInp" class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Phone" type="text">
                 </div>
                 <div class="py-6">
                   <h3 class="font-bold mb-4">Email Id</h3>
-                  <input class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="...@gmail.com" type="text">
+                  <input class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="...@gmail.com" type="email">
                 </div>
-                <a href="next.html"><button id="" class="mb-6 btn rounded-lg w-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-bold " >NEXT</button></a> 
+                <div>
+                  <!-- Open the modal using ID.showModal() method -->
+                  <!-- my_modal_1.showModal() -->
+                  <!--  id="nextBtn" class="pointer-events-none" -->
+                  <button id="nextBtn" class="mb-6 btn rounded-lg w-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-bold" onclick="enableNext()" >NEXT</button>
+                  <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                      <div class="flex flex-col gap-7 items-center bg-white py-14 px-20">
+                        <img class="w-28 " src="images/success.png" alt="">
+                        <h3 class="text-xl font-bold text-[#27ae5f]">SUCCESS</h3>
+                        <div class="text-center">
+                            <h2 class="font-bold text-lg">Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you.</h2>
+                            <p class="text-gray-600">Shortly you will find a confirmation in your email</p>
+                        </div>
+                        <div class="w-full flex justify-center">
+                            <a class="w-full flex justify-center" href="index.html"><button class="mb-6 btn w-[60%] rounded-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#27ae5f] font-bold ">Continue</button></a> 
+                        </div>
+                    </div>
+                      <!-- <div class="modal-action">
+                        <form method="dialog">
+                          <button class="btn">Close</button>
+                        </form>
+                      </div> -->
+                    </div>
+                  </dialog>
+                </div>
+                <!-- <a  id="nextBtn" class="pointer-events-none" href="next.html"><button class="mb-6 btn rounded-lg w-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-bold" >NEXT</button></a>  -->
                 <div class="flex justify-between">
                   <p><a href="" class="text-gray-600">Terms and Conditions</a></p>
                   <p><a href="" class="text-gray-600">Cancellation Policy</a></p>
@@ -390,7 +416,7 @@
       </div>
     </footer>
 
-
+    
     <script src="scripts/script.js"></script>
 </body>
 </html>
