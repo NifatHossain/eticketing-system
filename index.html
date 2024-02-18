@@ -330,11 +330,11 @@
               <div>
                 <div class="py-6">
                   <h3 class="font-bold mb-4">Passenger Name*</h3>
-                  <input id="nameInp" class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Your Name" type="text">
+                  <input id="nameInp" oninput="checkInput()"  class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Your Name" type="text">
                 </div>
                 <div class="">
                   <h3 class="font-bold mb-4">Phone Number*</h3>
-                  <input id="phnInp" class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Phone" type="text">
+                  <input id="phnInp" oninput="checkInput()" class="w-full pr-12 pl-4 py-2 border rounded-lg focus:outline-none focus:border-[#1DD100]" placeholder="Phone" type="number">
                 </div>
                 <div class="py-6">
                   <h3 class="font-bold mb-4">Email Id</h3>
@@ -344,7 +344,7 @@
                   <!-- Open the modal using ID.showModal() method -->
                   <!-- my_modal_1.showModal() -->
                   <!--  id="nextBtn" class="pointer-events-none" -->
-                  <button id="nextBtn" class="mb-6 btn rounded-lg w-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-bold" onclick="enableNext()" >NEXT</button>
+                  <button id="nextBtn" class="mb-6 btn rounded-lg w-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-bold" onclick="my_modal_1.showModal() " disabled>NEXT</button>
                   <dialog id="my_modal_1" class="modal">
                     <div class="modal-box">
                       <div class="flex flex-col gap-7 items-center bg-white py-14 px-20">
@@ -416,7 +416,9 @@
       </div>
     </footer>
 
-    
+    <input type="text" id="inputField" class="bg-red-300" required>
+    <button id="submitButton" disabled>Submit</button>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>

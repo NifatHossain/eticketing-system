@@ -112,7 +112,6 @@ function checkCoupon(){
     let inp= document.getElementById('couponInp');
     // let btn= document.getElementById('couponBtn');
     if(inp.value === 'NEW15'){
-        console.log('hi')
         document.getElementById('couponContainer').classList.add('hidden')
         let grand= parseInt(document.getElementById('grandTotal').innerText);
         grand= (grand*85)/100;
@@ -138,20 +137,17 @@ function totalSeats(){
     }
 }
 
-//next button
-function enableNext(){
-    let name= document.getElementById('nameInp').value;
-    let phn= document.getElementById('phnInp').value;
-    if(name.length>0 && phn.length>0){
-        if(document.getElementById('nextBtn').hasAttribute('disabled')){
-            document.getElementById('nextBtn').removeAttribute('disabled');
-        }
+
+function checkInput() {
+    var inputField = document.getElementById('nameInp');
+    var inputField2 = document.getElementById('phnInp');
+    var seat= parseInt(document.getElementById('seatSelected').innerText);
+    var submitButton = document.getElementById('nextBtn');
+  
+    if (inputField.value.length>0 && inputField2.value.length>0 && seat>0) {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
     }
-    
-    else{
-        if(!document.getElementById('nextBtn').hasAttribute('disabled')){
-            document.getElementById('nextBtn').setAttribute('disabled');
-        }
-        
-    }
-}
+  }
+  
