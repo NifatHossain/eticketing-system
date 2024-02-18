@@ -149,7 +149,7 @@
             </div>
             <div class="mt-12 bg-white  rounded-xl flex">
               <div class="py-8 pl-2 pr-2 md:pr-0 md:pl-8">
-                <div class="flex justify-between items-center">
+                <div class="flex flex-col md:flex-row justify-between items-center">
                   <div class="flex items-center gap-3">
                     <img src="images/bus-logo.png" alt="">
                     <div>
@@ -158,7 +158,7 @@
                     </div>
                   </div>
                   <div>
-                    <div class="flex items-center p-1 md:p-3 gap-1 rounded-lg text-sm md:text-base font-semibold text-[#1DD100] bg-green-200"> <img src="images/seat-green.png" alt="" srcset=""> <span id="seatLeft">40</span>Seats left</div>
+                    <div class="flex mt-3 md:mt-0 items-center p-1 md:p-3 gap-1 rounded-lg text-sm md:text-base font-semibold text-[#1DD100] bg-green-200"> <img src="images/seat-green.png" alt="" srcset=""> <span id="seatLeft">40</span>Seats left</div>
                   </div>
                 </div>
                 <div class="flex justify-center mt-5 mb-5 block md:hidden">
@@ -179,7 +179,7 @@
                   </div>
                   <hr>
                   <div class="flex justify-center">
-                    <div class="flex gap-6 mt-2">
+                    <div class="flex flex-col md:flex-row gap-6 mt-2 pt-3 md:pt-0">
                       <p class="bg-[#0307120d] rounded-lg text-lg font-semibold text-gray-600 p-4">Boarding Point - Laxmipur</p>
                       <p class="bg-[#0307120d] rounded-lg text-lg font-semibold text-gray-600 p-4"> Dropping Point - Bogura</p>
                       <p class="bg-[#0307120d] rounded-lg text-lg font-semibold text-gray-600 p-4">Est. Time - 11 Hour</p>
@@ -347,7 +347,7 @@
                   <button id="nextBtn" class="mb-6 btn rounded-lg w-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-bold" onclick="my_modal_1.showModal() " disabled>NEXT</button>
                   <dialog id="my_modal_1" class="modal">
                     <div class="modal-box">
-                      <div class="flex flex-col gap-7 items-center bg-white py-14 px-20">
+                      <div class="flex flex-col gap-7 items-center bg-white py-3 px-4 md:px-20">
                         <img class="w-28 " src="images/success.png" alt="">
                         <h3 class="text-xl font-bold text-[#27ae5f]">SUCCESS</h3>
                         <div class="text-center">
@@ -368,8 +368,8 @@
                 </div>
                 <!-- <a  id="nextBtn" class="pointer-events-none" href="next.html"><button class="mb-6 btn rounded-lg w-full top-0 bottom-0 right-0 px-4 py-2  text-white bg-[#1DD100] font-bold" >NEXT</button></a>  -->
                 <div class="flex justify-between">
-                  <p><a href="" class="text-gray-600">Terms and Conditions</a></p>
-                  <p><a href="" class="text-gray-600">Cancellation Policy</a></p>
+                  <p><a href="" class="text-gray-600 underline">Terms and Conditions</a></p>
+                  <p><a href="" class="text-gray-600 underline">Cancellation Policy</a></p>
                 </div>
               </div>
             </div>
@@ -416,8 +416,7 @@
       </div>
     </footer>
 
-    <input type="text" id="inputField" class="bg-red-300" required>
-    <button id="submitButton" disabled>Submit</button>
+
 
     <script src="scripts/script.js"></script>
 </body>
