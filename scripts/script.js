@@ -124,6 +124,9 @@ function checkCoupon(){
         grand= (grand*80)/100;
         document.getElementById('grandTotal').innerText= grand;
     }
+    else{
+        alert('Wrong Coupon Code!')
+    }
 }
 
 //check numder of seats
